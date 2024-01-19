@@ -1,0 +1,30 @@
+The Fake Product Review Monitoring System is a machine learning-based solution designed to identify and monitor fake reviews within an Amazon product review dataset. The system employs various machine learning concepts and techniques, including sentiment analysis, word cloud analysis, and classification algorithms, to distinguish between genuine and potentially deceptive reviews.
+
+Key Components and Steps:
+
+Dataset:
+Utilizes an Amazon product review dataset for training and testing the machine learning models.
+
+Preprocessing:
+Applies preprocessing steps to clean and prepare the text data for analysis.
+Includes tasks such as lowercasing, tokenization, removing stop words, punctuation, and stemming.
+
+Sentiment Analysis:
+Utilizes sentiment analysis to determine the sentiment (positive, negative, or neutral) of each review.
+Helps in understanding the overall sentiment distribution in the dataset.
+
+Word Cloud Analysis:
+Creates word clouds to visualize the most frequently occurring words in both positive and negative reviews.
+Provides insights into the prominent words associated with different sentiments.
+
+Classification Model:
+Implements a machine learning classification model (e.g., RandomForestClassifier, Naive Bayes) to predict whether a review is genuine or potentially fake.
+Trains the model using features extracted from the preprocessed text data.
+
+Model Deployment:
+Saves the trained model and vectorizer using the pickle library for future use.
+Integrates the model into a Streamlit web application for real-time predictions.
+
+Streamlit Web Application:
+Develops a Streamlit web application that allows users to input a review and receive a prediction of its authenticity (genuine or potentially fake).
+Enhances the user interface with dynamic elements, such as buttons and text areas, to facilitate interaction.
